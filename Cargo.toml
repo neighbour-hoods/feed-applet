@@ -10,3 +10,14 @@ opt-level = "z"
 
 [profile.release]
 opt-level = "z"
+
+[workspace.dependencies]
+hdi = "=0.2.0"
+hdk = "=0.1.0"
+serde = "1"
+
+[workspace.dependencies.posts]
+path = "dna/coordinator_zomes/posts"
+
+[workspace.dependencies.posts_integrity]
+path = "dna/integrity_zomes/posts_integrity"

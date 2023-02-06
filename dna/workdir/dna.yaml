@@ -1,18 +1,19 @@
 ---
 manifest_version: "1"
-name: provider
+name: feed
 integrity:
-  uuid: 00000000-0000-0000-0000-000000000000
+  network_seed: ~
   properties: ~
-  origin_time: 2022-09-10T04:13:46.720Z
+  origin_time: 1675305978892177
   zomes:
-    - name: provider_integrity
-      bundled: ../../target/wasm32-unknown-unknown/release/provider_integrity.wasm
-
+    - name: posts_integrity
+      hash: ~
+      bundled: "../../target/wasm32-unknown-unknown/release/posts_integrity.wasm"
+      dependencies: ~
 coordinator:
   zomes:
-    - name: provider
-      bundled: ../../target/wasm32-unknown-unknown/release/provider.wasm
+    - name: posts
+      hash: ~
+      bundled: "../../target/wasm32-unknown-unknown/release/posts.wasm"
       dependencies:
-        - name: provider_integrity
-
+        - name: posts_integrity

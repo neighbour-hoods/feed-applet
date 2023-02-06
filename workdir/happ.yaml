@@ -1,15 +1,15 @@
 ---
 manifest_version: "1"
-name: provider
+name: feed-applet
 description: ~
 roles:
 
-  - name: provider
+  - name: feed
     provisioning:
       strategy: create
       deferred: false
     dna:
-      bundled: "../dna/workdir/provider.dna"
+      bundled: "../dna/workdir/feed.dna"
       properties: ~
       uuid: ~
       version: ~
