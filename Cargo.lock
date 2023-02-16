@@ -637,9 +637,9 @@ dependencies = [
 
 [[package]]
 name = "hdi"
-version = "0.2.0"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "344ddd3db53dec1352aca06ca5048d305a2c20149cf3117e9669ac567e71c109"
+checksum = "8046116c32434837d28ad1b443802e2444a38d8cdb69caca9169414364fe0b69"
 dependencies = [
  "hdk_derive",
  "holo_hash",
@@ -654,9 +654,9 @@ dependencies = [
 
 [[package]]
 name = "hdk"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ab34bc763d15b2d91d26008487b189547da9c184b5bcd448242ac255f483443e"
+checksum = "0cbecb374a53eba516cbfefaad21f4bc805f4c731b81bd800a9a9e0239004eb3"
 dependencies = [
  "getrandom",
  "hdi",
@@ -1152,9 +1152,9 @@ checksum = "acbf547ad0c65e31259204bd90935776d1c693cec2f4ff7abb7a1bbbd40dfe58"
 
 [[package]]
 name = "pest"
-version = "2.5.4"
+version = "2.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4ab62d2fa33726dbe6321cc97ef96d8cde531e3eeaf858a058de53a8a6d40d8f"
+checksum = "028accff104c4e513bad663bbcd2ad7cfd5304144404c31ed0a77ac103d00660"
 dependencies = [
  "thiserror",
  "ucd-trie",
@@ -1165,23 +1165,6 @@ name = "pin-project-lite"
 version = "0.2.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e0a7ae3ac2f1173085d398531c705756c94a4c56843785df85a60c1a0afac116"
-
-[[package]]
-name = "posts"
-version = "0.0.1"
-dependencies = [
- "hdk",
- "posts_integrity",
- "serde",
-]
-
-[[package]]
-name = "posts_integrity"
-version = "0.0.1"
-dependencies = [
- "hdi",
- "serde",
-]
 
 [[package]]
 name = "proc-macro-error"
@@ -1214,6 +1197,27 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ef7d57beacfaf2d8aee5937dab7b7f28de3cb8b1828479bb5de2a7106f2bae2"
 dependencies = [
  "unicode-ident",
+]
+
+[[package]]
+name = "provider"
+version = "0.0.1"
+dependencies = [
+ "chrono",
+ "derive_more",
+ "hdk",
+ "provider_integrity",
+ "serde",
+]
+
+[[package]]
+name = "provider_integrity"
+version = "0.0.1"
+dependencies = [
+ "chrono",
+ "derive_more",
+ "hdi",
+ "serde",
 ]
 
 [[package]]
